@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ger</title>
+	</head>
+<body onLoad="show()"><div>
+        <div id="txt"></div>
+        <script language="javascript">
+            content = "蓝色多瑙河之恋<br />多瑙河的浪花<br />和着小提琴的悠扬<br />溅出一朵一朵幽蓝色的蔷薇<br />昏暗的角落<br />一杯cappuccino<br />随着圆舞曲的旋转旋转渐渐温热<br />曼妙的节奏<br />两个人<br />不免荡起心中一阵又一阵憧憬的美好<br />蓝色的风<br />蓝色的风弥漫房间<br />从德国的黑林山吹向乌克兰<br />和着欢快的节奏<br />舞池中央<br />一个女孩和着风在旋转<br />她不知道她在等待着谁<br />她只知他也有着同多瑙河一样明净的心<br />和飘过多瑙河的风一样温柔的眼睛<br />风儿飘飘<br />女孩的嘴角漾起微笑<br />仿若多瑙河的蓝色河水一般清澈 ";
+            i = 0;
+ 
+            function show() {
+                str = content.substr(0, i);
+                txt.innerHTML = str + "｜";
+                i++;
+                if (i > content.length) i = 0;
+                setTimeout("show()", 200);
+            }
+        </script>
+</div>
+    </body>
+</html>
